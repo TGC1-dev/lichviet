@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutLichVanNienChiTietNgayActivity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_header_lichvannien"/>
+    <ImageView android:visibility="gone" android:src="@drawable/a_bg" android:scaleType="centerInside" android:contentDescription="@string/app_name" android:alpha="0.1" style="@style/Layout.FillWidthHeight"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/layad" android:layout_below="@+id/layoutHeaderLichVanNien">
+        <LinearLayout android:orientation="vertical" android:id="@+id/llMainChiTiet" android:padding="5dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_chi_tiet_ngay" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/tuvi_dialog_text_size" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtChiTietTitle" android:background="@drawable/bg_chi_tiet_ngay_title" android:layout_width="match_parent" android:layout_height="@dimen/row_height" android:text="Thứ 7, Ngày 30 tháng 1 năm 2016"/>
+                <TextView android:textSize="@dimen/tuvi_dialog_text_size" android:id="@+id/txtChiTietContent" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Ngày Âm Lịch: Ngày 21 tháng 12 năm 2015(Ngày Hoàng Đạo) \10 Ngày Bát Tự: Giờ Bính Tý, Ngày Giáp Dần, Tháng Kỷ Sửu, Năm Ất Mùi\10 Giờ Hoàng Đạo: Tý(23-1h)"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/bg_chi_tiet_ngay" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <TextView android:textSize="@dimen/tuvi_dialog_text_size" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtNhiThapBatTuTitle" android:background="@drawable/bg_chi_tiet_ngay_title" android:layout_width="match_parent" android:layout_height="@dimen/row_height" android:text="Bình giải chi tiết"/>
+                <TextView android:textSize="@dimen/tuvi_dialog_text_size" android:id="@+id/txtNhiThapBatTuContent" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Trực: Trừ \10 Sao: Thất\10 Nên làm: Khởi công trăm việc đều tốt"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/layout_bottom_ad"/>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/previousarrow" android:background="@drawable/pre_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="21sp" android:id="@+id/monthname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="THÁNG 1 NĂM 2017" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/nextarrow" android:background="@drawable/next_month" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/calenderheader" android:background="#fe5f01" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="#ffe200" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="CN" android:layout_weight="1"/>
+        <TextView android:textColor="#ffe200" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="T2" android:layout_weight="1"/>
+        <TextView android:textColor="#ffe200" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="T3" android:layout_weight="1"/>
+        <TextView android:textColor="#ffe200" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="T4" android:layout_weight="1"/>
+        <TextView android:textColor="#ffe200" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="T5" android:layout_weight="1"/>
+        <TextView android:textColor="#ffe200" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="T6" android:layout_weight="1"/>
+        <TextView android:textColor="#ffe200" android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:text="T7" android:layout_weight="1"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/rlCalendar" android:background="#fadab1" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <GridView android:gravity="center" android:id="@+id/gridview" android:background="#fadab1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginTop="2dp" android:layout_marginRight="1dp" android:layout_marginBottom="2dp" android:listSelector="@drawable/bg_calendar" android:horizontalSpacing="1dp" android:verticalSpacing="1dp" android:numColumns="7" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</LinearLayout>

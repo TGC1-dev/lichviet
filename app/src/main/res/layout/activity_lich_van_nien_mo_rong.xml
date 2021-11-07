@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutLichVanNienMoRongActivity" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Layout.FillWidthHeight.Vertical">
+    <ImageView android:visibility="gone" android:src="@drawable/a_bg" android:scaleType="centerInside" android:contentDescription="@string/app_name" android:alpha="0.1" style="@style/Layout.FillWidthHeight"/>
+    <include layout="@layout/layout_header_lichvannien"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/llCauhinh" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="70dp" android:weightSum="100" android:layout_below="@+id/layoutHeaderLichVanNien">
+        <TextView android:textSize="@dimen/tu_vi_spinner_text_size" android:ellipsize="start" android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/lblChonGio" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_marginBottom="2dp" android:text="Chế độ giờ:" android:singleLine="true" android:layout_weight="40"/>
+        <RadioGroup android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/radioGroupGio" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="100" android:layout_weight="60">
+            <RadioButton android:textSize="@dimen/tu_vi_spinner_text_size" android:gravity="center" android:layout_gravity="center" android:id="@+id/radio12h" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="2dp" android:checked="true" android:button="@null" android:text=" 12h" android:maxLines="1" android:drawableLeft="@drawable/radio_button_selector" android:layout_weight="50"/>
+            <RadioButton android:textSize="@dimen/tu_vi_spinner_text_size" android:gravity="center" android:layout_gravity="center" android:id="@+id/radio24h" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="2dp" android:button="@null" android:text=" 24h" android:maxLines="1" android:drawableLeft="@drawable/radio_button_selector" android:layout_weight="50"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/linearLayoutMain" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/llLichVanNienBottom" android:layout_below="@+id/llCauhinh">
+        <ListView android:layout_gravity="bottom" android:id="@+id/listView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent"/>
+    </LinearLayout>
+    <include layout="@layout/layout_lichvannien_bottom_control"/>
+</RelativeLayout>

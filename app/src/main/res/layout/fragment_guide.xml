@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@xml/bg_nsh" style="@style/Layout.FillWidthHeight">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/imgGiaithichQuangcao" android:layout_width="match_parent" android:layout_height="100dp" android:layout_margin="10dp" android:src="@drawable/mobile510_ads_thumb0" android:layout_alignParentTop="true"/>
+        <LinearLayout android:orientation="vertical" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/imgGiaithichQuangcao">
+            <TextView android:textSize="@dimen/giaithich_quangcaoTextsize" android:textColor="#ab1818" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtTitleGiaithich" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Quảng cáo giúp chúng tôi tồn tại và duy trì sự phát triển."/>
+            <TextView android:textSize="@dimen/giaithich_quangcaoTextsize" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtContentGiaithich" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="Để tạo ra một ứng dụng chất lượng, ngoài sự đam mê chúng tôi phải bỏ ra rất nhiều thời gian, công sức và chi phí.\10\10Quảng cáo giúp chúng tôi có thêm thu nhập để bù đắp các chi phí này."/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutHeaderLichVanNien" android:background="#fc021a" android:layout_height="@dimen/tuvi_top_size" style="@style/Layout.FillWidth.Vertical">
+    <RelativeLayout android:background="@drawable/a_tieude" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100">
+        <ImageView android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/imageLeft" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/btn_back" android:layout_alignParentLeft="true" android:contentDescription="Back"/>
+        <TextView android:textSize="@dimen/activity_phong_thuy_row_title_text_size" android:textColor="#ffea00" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/lblTitle" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="3dp" android:text="LỊCH NGÀY" android:lines="1" android:singleLine="false" android:layout_centerInParent="true"/>
+        <ImageView android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/imageRight" android:paddingRight="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/a_btn_today" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View style="@style/Divider"/>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/thungay" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/a_khungthu" android:layout_centerHorizontal="true"/>
+    <vn.net.vac.base.view.SquareImageView android:id="@+id/viewConGiap" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/m_giap0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100" android:layout_above="@+id/viewConGiap">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="20"/>
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewThu" android:layout_width="match_parent" android:layout_height="0dp" android:text="Thứ Sáu" android:singleLine="true" android:layout_weight="10"/>
+        <TextView android:textSize="@dimen/activity_lichngay_ngay_textzise" android:textColor="@color/lichvannien_yellow" android:gravity="top|center_vertical|center_horizontal|center" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/textViewNgay" android:layout_width="match_parent" android:layout_height="0dp" android:text="29" android:singleLine="true" android:layout_weight="55"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/imageViewHoangDao" android:layout_width="match_parent" android:layout_height="0dp" android:src="@drawable/hoangdao" android:layout_weight="10"/>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="5"/>s 
+    </LinearLayout>
+</RelativeLayout>

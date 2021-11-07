@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutKienThucPhongThuy" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Layout.FillWidthHeight.Vertical">
+    <include layout="@layout/layout_header_lichvannien2"/>
+    <RelativeLayout android:background="@drawable/bg_bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/layoutHeaderLichVanNien">
+        <ListView android:layout_gravity="bottom" android:id="@+id/listView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:layout_below="@+id/layoutHeaderLichVanNien"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/listViewBottom" android:background="@drawable/bottom_bar" android:padding="3dp" android:layout_width="match_parent" android:layout_height="@dimen/tuvi_bottom_size" android:layout_alignParentBottom="true">
+            <LinearLayout android:layout_gravity="center" android:id="@+id/listViewBottomBtn" android:background="@drawable/pt1_tab1" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100">
+                <vn.net.vac.base.view.AutoBgButton android:id="@+id/btnPt1Tab1" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="25" style="@style/Button"/>
+                <vn.net.vac.base.view.AutoBgButton android:id="@+id/btnPt1Tab2" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="25" style="@style/Button"/>
+                <vn.net.vac.base.view.AutoBgButton android:id="@+id/btnPt1Tab3" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="25" style="@style/Button"/>
+                <vn.net.vac.base.view.AutoBgButton android:id="@+id/btnPt1Tab4" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="25" style="@style/Button"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="day_of_week">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </array>
+    <array name="giaithich_quangcao_content_en">
+        <item>To create a quality application, in addition to the passion we have to spend a lot of time, effort and cost.\10\10Ads helps us have more income to offset these costs.</item>
+        <item>In the application, we use Google and Facebook advertising system, and can display popup.\10\10We always try to minimize the appearance of Ads, to avoid annoying the user.</item>
+        <item>Mobile510 will try our best to make the application better than better, bring the most satisfaction to you.\10\10Any other feedback, comments, and other communications should be directed to mobile510.contact@gmail.com.</item>
+    </array>
+    <array name="giaithich_quangcao_cotent_vn">
+        <item>Để tạo ra một ứng dụng chất lượng, ngoài sự đam mê chúng tôi phải bỏ ra rất nhiều thời gian, công sức và chi phí.\10\10Quảng cáo giúp chúng tôi có thêm thu nhập để bù đắp các chi phí này.</item>
+        <item>Trong ứng dụng, chúng tôi sử dụng hệ thống quảng cáo của Google, Facebook và có thể hiển thị popup.\10\10Chúng tôi luôn cố gắng giảm thiểu tối đa sự xuất hiện của quảng cáo, tránh gây khó chịu cho người dùng.</item>
+        <item>Mobile510 sẽ luôn nỗ lực hết mình để ứng dụng ngày một hoàn thiện, mang tới sự hài lòng nhất cho quí vị.\10\10Chúng tôi luôn lắng nghe các ý kiến góp ý của quí vị thông qua hòm thư mobile510.contact@gmail.com.</item>
+    </array>
+    <array name="giaithich_quangcao_title_en">
+        <item>Advertising helps us work and sustain the growth.</item>
+        <item>Ads can annoy the user. We understand this issue.</item>
+        <item>Mobile510 wishes to receive the sympathy and the trust from users.</item>
+    </array>
+    <array name="giaithich_quangcao_title_vn">
+        <item>Quảng cáo giúp chúng tôi tồn tại và duy trì sự phát triển.</item>
+        <item>Quảng cáo có thể gây khó chịu. Chúng tôi thấu hiểu điều này.</item>
+        <item>Mobile510 rất mong nhận được sự đồng cảm và tin dùng của quí vị.</item>
+    </array>
+    <array name="term">
+        <item>1週間</item>
+        <item>1ヶ月</item>
+        <item>3ヶ月</item>
+        <item>6ヶ月</item>
+        <item>1年</item>
+        <item>2年</item>
+    </array>
+</resources>

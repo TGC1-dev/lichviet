@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutXuatHanh" style="@style/Layout.FillWidthHeight.Vertical">
+    <include layout="@layout/layout_header_lichvannien2"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/layad" android:layout_below="@+id/layoutHeaderLichVanNien">
+        <LinearLayout android:orientation="vertical" android:id="@+id/llControll" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="3dp" android:layout_width="match_parent" android:layout_height="40dp">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/llInnerControl" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/activity_phong_thuy_row_title_text_size" android:gravity="right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="5dp" android:text="Kích thước"/>
+                    <vn.net.vac.base.view.ClearableEditText android:textColor="@color/red" android:gravity="center" android:id="@+id/inputValue" android:background="@drawable/bg_text_tlb" android:layout_width="200dp" android:layout_height="wrap_content" android:text="10.10" android:inputType="numberDecimal"/>
+                    <TextView android:textSize="@dimen/activity_phong_thuy_row_title_text_size" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:text="cm"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView android:id="@+id/btnShowResult" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="8dp" android:src="@drawable/btn_binhgiai"/>
+        </LinearLayout>
+        <View android:id="@+id/divider" android:background="#ffcc00" android:layout_width="match_parent" android:layout_height="2px" android:layout_below="@+id/llControll"/>
+        <ScrollView android:id="@+id/scrollViewMain" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/divider">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <WebView android:id="@+id/webView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <fragment android:name="vn.net.vac.base.view.fragment.FacebookNativeAdFragment" android:id="@+id/fragment_ads" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_ad"/>
+</RelativeLayout>

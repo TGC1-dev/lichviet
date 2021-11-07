@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutNhipSinhHoc" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Layout.FillWidthHeight.Vertical">
+    <include layout="@layout/layout_header_lichvannien2"/>
+    <RelativeLayout android:background="@drawable/bg_bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/layoutHeaderLichVanNien">
+        <LinearLayout android:orientation="vertical" android:id="@+id/layoutNhipSinhHocContent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="5dp" android:weightSum="100" android:layout_above="@+id/layad">
+            <LinearLayout android:orientation="vertical" android:id="@+id/input" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="8dp" android:weightSum="3" android:layout_weight="18">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="100" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Sinh ngày:" android:singleLine="true" android:layout_weight="20"/>
+                    <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:gravity="center" android:layout_gravity="center" android:id="@+id/selecNgaySinh" android:background="@drawable/nsh_dropdownlist" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginTop="1dp" android:layout_marginRight="8dp" android:layout_marginBottom="1dp" android:text="10/05/1989" android:singleLine="true" android:layout_weight="80"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="100" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Số năm:" android:singleLine="true" android:layout_weight="20"/>
+                    <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:textColor="@color/red" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/countYears" android:paddingLeft="8dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="0 năm" android:singleLine="true" android:layout_weight="80"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="100" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:text="Số ngày:" android:singleLine="true" android:layout_weight="20"/>
+                    <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:textColor="@color/red" android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/countDates" android:paddingLeft="8dp" android:layout_width="0dp" android:layout_height="match_parent" android:text="1 ngày" android:singleLine="true" android:layout_weight="80"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/showInfor" android:background="@drawable/bg_nsh_show_infor" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="22">
+                <LinearLayout android:orientation="horizontal" android:paddingLeft="3dp" android:paddingRight="3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="20"/>
+                    <RelativeLayout android:gravity="center" android:layout_gravity="center" android:background="@drawable/nsh" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:layout_weight="60">
+                        <vn.net.vac.base.view.SquareImageView android:id="@+id/btnPrevious" android:background="@drawable/chart_pre" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true"/>
+                        <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/lblDate" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="12/12/2015" android:layout_centerInParent="true"/>
+                        <vn.net.vac.base.view.SquareImageView android:id="@+id/btnNext" android:background="@drawable/chart_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="100" android:layout_weight="20">
+                        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="10"/>
+                        <ImageView android:id="@+id/today" android:background="@drawable/chart_today" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="80"/>
+                        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="10"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.viewpager.widget.ViewPager android:id="@+id/show" android:paddingLeft="5dp" android:paddingRight="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="20"/>
+            </LinearLayout>
+            <com.github.mikephil.charting.charts.LineChart android:id="@+id/lineChartNSH" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="45"/>
+            <LinearLayout android:orientation="vertical" android:padding="3dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="8dp" android:weightSum="2" android:layout_weight="15">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="90" android:layout_weight="1">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="30" android:layout_weight="30">
+                        <CheckBox android:layout_gravity="center" android:id="@+id/checkb1" android:layout_width="0dp" android:layout_height="match_parent" android:checked="true" android:button="@xml/custom_checkbox" android:layout_weight="10"/>
+                        <TextView android:textSize="@dimen/acivity_nsh_show_text_size" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left" android:id="@+id/textDescroption1" android:layout_width="0dp" android:layout_height="match_parent" android:text="Sức khỏe" android:singleLine="true" android:layout_weight="20"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="30" android:layout_weight="30">
+                        <CheckBox android:layout_gravity="center" android:id="@+id/checkb2" android:layout_width="0dp" android:layout_height="match_parent" android:checked="true" android:button="@xml/custom_checkbox" android:layout_weight="10"/>
+                        <TextView android:textSize="@dimen/acivity_nsh_show_text_size" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/textDescroption2" android:layout_width="0dp" android:layout_height="match_parent" android:text="Tình cảm" android:singleLine="true" android:layout_weight="20"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="30" android:layout_weight="30">
+                        <CheckBox android:layout_gravity="center" android:id="@+id/checkb3" android:layout_width="0dp" android:layout_height="match_parent" android:checked="true" android:button="@xml/custom_checkbox" android:layout_weight="10"/>
+                        <TextView android:textSize="@dimen/acivity_nsh_show_text_size" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/textDescroption3" android:layout_width="0dp" android:layout_height="match_parent" android:text="Trí tuệ" android:singleLine="true" android:layout_weight="20"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="90" android:layout_weight="1">
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="30" android:layout_weight="30">
+                        <CheckBox android:layout_gravity="center" android:id="@+id/checkb4" android:layout_width="0dp" android:layout_height="match_parent" android:checked="true" android:button="@xml/custom_checkbox" android:layout_weight="10"/>
+                        <TextView android:textSize="@dimen/acivity_nsh_show_text_size" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/textDescroption4" android:layout_width="0dp" android:layout_height="match_parent" android:text="Tinh thần" android:singleLine="true" android:layout_weight="20"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="30" android:layout_weight="30">
+                        <CheckBox android:layout_gravity="center" android:id="@+id/checkb5" android:layout_width="0dp" android:layout_height="match_parent" android:checked="true" android:button="@xml/custom_checkbox" android:layout_weight="10"/>
+                        <TextView android:textSize="@dimen/acivity_nsh_show_text_size" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/textDescroption5" android:layout_width="0dp" android:layout_height="match_parent" android:button="@xml/custom_checkbox" android:text="Thẩm mỹ" android:singleLine="true" android:layout_weight="20"/>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="30" android:layout_weight="30">
+                        <CheckBox android:layout_gravity="center" android:id="@+id/checkb6" android:layout_width="0dp" android:layout_height="match_parent" android:checked="true" android:button="@xml/custom_checkbox" android:layout_weight="10"/>
+                        <TextView android:textSize="@dimen/acivity_nsh_show_text_size" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/textDescroption6" android:layout_width="0dp" android:layout_height="match_parent" android:text="Trực giác" android:singleLine="true" android:layout_weight="20"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <include layout="@layout/layout_bottom_ad"/>
+    </RelativeLayout>
+</RelativeLayout>

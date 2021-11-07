@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutThuocLoBan" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Layout.FillWidthHeight.Vertical">
+    <include layout="@layout/layout_header_lichvannien2"/>
+    <vn.net.vac.base.view.RotateLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/layoutHeaderLichVanNien" lib:angle="270">
+        <LinearLayout android:orientation="vertical" android:id="@+id/mainLayoutThuocLoBan" android:background="@drawable/bg_bottom" android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/tuvi_dialog_title_text_size" android:textColor="@color/red" android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/txtValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3.75 cm" android:lines="1" android:layout_centerHorizontal="true"/>
+                <vn.net.vac.base.view.SquareImageView android:id="@+id/btnDetail" android:layout_width="wrap_content" android:layout_height="35dp" android:src="@drawable/info_icon1" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:rotation="270"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:listSelector="@android:color/transparent" android:weightSum="100" android:layout_weight="90" android:layout_below="@+id/txtValue">
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="100">
+                    <HorizontalScrollView android:id="@+id/horizontalScrollView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="120">
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="40">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="10"/>
+                                <LinearLayout android:orientation="horizontal" android:id="@+id/llTwoImg52" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="30">
+                                    <ImageView android:id="@+id/img521" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/thuocloban522_1" android:contentDescription="Thuoc 52"/>
+                                    <ImageView android:id="@+id/img522" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/thuocloban522_2" android:contentDescription="Thuoc 52"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="40">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="10"/>
+                                <LinearLayout android:orientation="horizontal" android:id="@+id/llTwoImg49" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="30">
+                                    <ImageView android:id="@+id/img421" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/thuocloban429_1" android:contentDescription="Thuoc 49"/>
+                                    <ImageView android:id="@+id/img422" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/thuocloban429_2" android:contentDescription="Thuoc 49"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="40">
+                                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="10"/>
+                                <LinearLayout android:orientation="horizontal" android:id="@+id/llTwoImg38" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="30">
+                                    <ImageView android:id="@+id/img381" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/thuocloban388_1" android:contentDescription="Thuoc 38"/>
+                                    <ImageView android:id="@+id/img382" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/thuocloban388_2" android:contentDescription="Thuoc 38"/>
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                    <View android:background="@color/red" android:layout_width="5px" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+                    <LinearLayout android:orientation="vertical" android:id="@+id/txtThuocLoBan" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="120">
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="40">
+                            <TextView android:gravity="bottom" android:id="@+id/txtThuocLoBan52" android:layout_width="match_parent" android:layout_height="0dp" android:text="THƯỚC LỖ BAN 52.2CM: Khoảng không thông thủy(cửa, cửa sổ...)" android:singleLine="true" android:layout_weight="10"/>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="30"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="40">
+                            <TextView android:gravity="bottom" android:layout_gravity="bottom" android:id="@+id/txtThuocLoBan42" android:layout_width="match_parent" android:layout_height="0dp" android:text="THƯỚC LỖ BAN 42.9CM(Dương trạch): Khối xây dựng(bếp, bệ, bậc ...)" android:singleLine="true" android:layout_weight="10"/>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="30"/>
+                        </LinearLayout>
+                        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="40">
+                            <TextView android:gravity="bottom" android:layout_gravity="bottom" android:id="@+id/txtThuocLoBan38" android:layout_width="match_parent" android:layout_height="0dp" android:text="THƯỚC LỖ BAN 38.8CM(Âm phần): Đồ nội thất(bàn thờ, tủ ...)" android:singleLine="true" android:layout_weight="10"/>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="30"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </vn.net.vac.base.view.RotateLayout>
+</RelativeLayout>

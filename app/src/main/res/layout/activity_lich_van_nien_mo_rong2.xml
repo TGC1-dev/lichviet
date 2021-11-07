@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutLichVanNienMoRongActivity" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Layout.FillWidthHeight.Vertical">
+    <vn.net.vac.base.view.View1242_366 android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/viewTop" android:background="@drawable/bg_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="415" android:layout_alignParentTop="true">
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="275"/>
+        <LinearLayout android:orientation="vertical" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="140">
+            <LinearLayout android:id="@+id/btnDanhGia" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+                <ImageView android:paddingLeft="18dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="-5dp" android:src="@drawable/btn_danhgia" android:scaleType="centerInside"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/btnGopY" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+                <ImageView android:paddingLeft="18dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="-5dp" android:src="@drawable/btn_gopy" android:scaleType="centerInside"/>
+            </LinearLayout>
+        </LinearLayout>
+    </vn.net.vac.base.view.View1242_366>
+    <RelativeLayout android:background="@drawable/bg_bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewTop">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llCauhinh" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="70dp" android:weightSum="100">
+            <TextView android:textSize="18sp" android:ellipsize="start" android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/lblChonGio" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_marginBottom="2dp" android:text="Chế Độ Giờ:" android:singleLine="true" android:layout_weight="35"/>
+            <RadioGroup android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/radioGroupGio" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="100" android:layout_weight="65">
+                <RadioButton android:textSize="18sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/radio12h" android:layout_width="match_parent" android:layout_height="match_parent" android:checked="true" android:button="@null" android:text="12h" android:maxLines="1" android:drawableLeft="@drawable/radio_button_selector" android:layout_weight="50"/>
+                <RadioButton android:textSize="18sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/radio24h" android:layout_width="match_parent" android:layout_height="match_parent" android:button="@null" android:text="24h" android:maxLines="1" android:drawableLeft="@drawable/radio_button_selector" android:layout_weight="50"/>
+            </RadioGroup>
+        </LinearLayout>
+        <ScrollView android:orientation="vertical" android:id="@+id/linearLayoutMain" android:background="@drawable/bg_thongtinkhac" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="25dp" android:layout_marginRight="25dp" android:layout_marginBottom="20dp" android:layout_above="@+id/llLichVanNienBottom" android:layout_below="@+id/llCauhinh">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_sukien" android:visibility="gone" android:src="@drawable/sukien" style="@style/functions"/>
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_nhipsinhhoc" android:src="@drawable/nhipsinhhoc" style="@style/functions"/>
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_xemphongthuy" android:src="@drawable/xemphongthuy" style="@style/functions"/>
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_thuocloban" android:src="@drawable/thuocloban" style="@style/functions"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_xem_huongnha" android:src="@drawable/xemhuongnha" style="@style/functions"/>
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_xem_tuoi_xaynha" android:src="@drawable/xemtuoixaynha" style="@style/functions"/>
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_vankhan" android:src="@drawable/vankhan" style="@style/functions"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_gieoque" android:src="@drawable/gieoque" style="@style/functions"/>
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_tuvitrondoi" android:src="@drawable/tuvitrondoi_2" style="@style/functions"/>
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_tuvi12congiap" android:src="@drawable/tuvi12congiap" style="@style/functions"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_tuvi12chomsao" android:src="@drawable/tuvi12chomsao" style="@style/functions"/>
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_xemboivui" android:src="@drawable/xemboivui" style="@style/functions"/>
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_boituongmao" android:src="@drawable/boituongmao" style="@style/functions"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_giaimagiacmo" android:src="@drawable/giaimagiacmo" style="@style/functions"/>
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_xemtuoixongnha" android:src="@drawable/xemtuoixongnha" style="@style/functions"/>
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_xuathanhdauxuan" android:src="@drawable/xuathanhdauxuan" style="@style/functions"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_ngayle" android:src="@drawable/ngayle" style="@style/functions"/>
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_danhgiaungdung" android:src="@drawable/danhgiaungdung" style="@style/functions"/>
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_chiaseungdung" android:src="@drawable/chiaseungdung" style="@style/functions"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_gopyungdung" android:src="@drawable/gopyungdung" style="@style/functions"/>
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_ungdung" android:src="@drawable/ungdung" style="@style/functions"/>
+                    <vn.net.vac.base.view.SquareImageView2 android:id="@+id/btn_buy_pro" android:src="@drawable/buy_fullversion" style="@style/functions"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <include layout="@layout/layout_lichvannien_bottom_control2"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_home_cover_height">300dp</dimen>
+    <dimen name="activity_home_cover_width">254dp</dimen>
+    <dimen name="activity_home_quote_text_size">26sp</dimen>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+    <dimen name="tuvi_bottom_size">90dp</dimen>
+    <dimen name="tuvi_dialog_text_size">21sp</dimen>
+    <dimen name="tuvi_dialog_title_text_size">36sp</dimen>
+    <dimen name="tuvi_row_list_view_height">100dp</dimen>
+    <dimen name="tuvi_top_size">90dp</dimen>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_rounded_conner_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+    <TextView android:textSize="@dimen/tuvi_dialog_title_text_size" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:id="@+id/dialogLoingoTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bổ sung ngày lễ"/>
+    <TextView android:textSize="@dimen/tuvi_dialog_text_size" android:textColor="#000000" android:gravity="center" android:id="@+id/dialogTxt" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Nếu quí vị thấy danh sách ngày lễ âm lịch hay dương lịch còn thiếu hoặc thông tin chưa chính xác, xin hãy gửi góp ý bổ sung để chúng tôi cập nhật lại cho đầy đủ nhất. Xin cảm ơn!"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="25dp" android:weightSum="100">
+        <Button android:textColor="#005be1" android:id="@+id/dialogBtnCloseApp" android:background="@drawable/bg_button_white" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="10dp" android:text="Bổ sung" android:layout_weight="50"/>
+        <Button android:textColor="#005be1" android:id="@+id/dialogBtnDonotCloseApp" android:background="@drawable/bg_button_white" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="10dp" android:text="Hủy" android:layout_weight="50"/>
+    </LinearLayout>
+</LinearLayout>

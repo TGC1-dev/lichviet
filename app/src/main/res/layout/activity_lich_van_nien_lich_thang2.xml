@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutLichVanNienLichNgayActivity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <vn.net.vac.base.view.View1242_366 android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/viewTop" android:background="@drawable/bg_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="415" android:layout_alignParentTop="true">
+        <LinearLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="275"/>
+        <LinearLayout android:orientation="vertical" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:weightSum="2" android:layout_weight="140">
+            <LinearLayout android:id="@+id/btnChiTiet" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+                <ImageView android:paddingLeft="18dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="-5dp" android:src="@drawable/btn_chitiet_" android:scaleType="centerInside"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="top|center_vertical|center_horizontal|center" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/btnToday" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="1">
+                <ImageView android:paddingLeft="18dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="-5dp" android:src="@drawable/btn_today_" android:scaleType="centerInside"/>
+            </LinearLayout>
+        </LinearLayout>
+    </vn.net.vac.base.view.View1242_366>
+    <RelativeLayout android:background="@drawable/bg_bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/viewTop">
+        <LinearLayout android:orientation="vertical" android:id="@+id/llMainLichNgay" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100" android:layout_above="@+id/rlAmLich">
+            <LinearLayout android:paddingLeft="35dp" android:paddingTop="0dp" android:paddingRight="35dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="80">
+                <vn.net.vac.base.view.calendar.CalenderView android:id="@+id/calendar_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="5">
+                <ImageView android:id="@+id/imgHoangDao" android:layout_width="match_parent" android:layout_height="17dp" android:src="@drawable/img_dao" android:scaleType="centerInside"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="15">
+                <TextView android:textSize="14sp" android:gravity="center" android:layout_gravity="center" android:id="@+id/text_idom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="Lúc khó dẫu chào, chào cũng lãng,\10 Khi giàu chẳng hỏi, hỏi thì quen. (Nguyễn Bỉnh Khiêm)"/>
+            </LinearLayout>
+        </LinearLayout>
+        <vn.net.vac.base.view.View1242_311 android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/rlAmLich" android:background="@drawable/date_bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="100" android:layout_above="@+id/llLichVanNienBottom">
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:weightSum="92" android:layout_weight="25">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="30">
+                    <ImageView android:id="@+id/imgStarHoangDao" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="3dp" android:src="@drawable/star_1"/>
+                    <TextView android:textSize="@dimen/ngayamlich" android:textColor="@color/lichvannien1" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewGio" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="GIỜ"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/ngayamlich2" android:textColor="@color/lichvannien2" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewAmLichGioNumber" android:layout_width="match_parent" android:layout_height="0dp" android:text="12:12" android:layout_weight="30"/>
+                <TextView android:textSize="@dimen/ngayamlich3" android:textColor="@color/lichvannien1" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewAmLichGioCanChi" android:layout_width="match_parent" android:layout_height="0dp" android:text="Tân Hợi" android:layout_weight="30"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:weightSum="92" android:layout_weight="25">
+                <TextView android:textSize="@dimen/ngayamlich" android:textColor="@color/lichvannien1" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewNgay" android:layout_width="match_parent" android:layout_height="0dp" android:text="NGÀY" android:layout_weight="30"/>
+                <TextView android:textSize="@dimen/ngayamlich2" android:textColor="@color/lichvannien2" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewAmLichNgayNumber" android:layout_width="match_parent" android:layout_height="0dp" android:text="21" android:layout_weight="30"/>
+                <TextView android:textSize="@dimen/ngayamlich3" android:textColor="@color/lichvannien1" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewAmLichNgayCanChi" android:layout_width="match_parent" android:layout_height="0dp" android:text="Mậu Tý" android:layout_weight="30"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:weightSum="92" android:layout_weight="25">
+                <TextView android:textSize="@dimen/ngayamlich" android:textColor="@color/lichvannien1" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewThang" android:layout_width="match_parent" android:layout_height="0dp" android:text="THÁNG" android:layout_weight="30"/>
+                <TextView android:textSize="@dimen/ngayamlich2" android:textColor="@color/lichvannien2" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewAmLichThangNumber" android:layout_width="match_parent" android:layout_height="0dp" android:text="12" android:layout_weight="30"/>
+                <TextView android:textSize="@dimen/ngayamlich3" android:textColor="@color/lichvannien1" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewAmLichThangCanChi" android:layout_width="match_parent" android:layout_height="0dp" android:text="Kỷ Sửu" android:layout_weight="30"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:weightSum="92" android:layout_weight="25">
+                <TextView android:textSize="@dimen/ngayamlich" android:textColor="@color/lichvannien1" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewNam" android:layout_width="match_parent" android:layout_height="0dp" android:text="NĂM" android:layout_weight="30"/>
+                <TextView android:textSize="@dimen/ngayamlich2" android:textColor="@color/lichvannien2" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewAmLichNamNumber" android:layout_width="match_parent" android:layout_height="0dp" android:text="2015" android:layout_weight="30"/>
+                <TextView android:textSize="@dimen/ngayamlich3" android:textColor="@color/lichvannien1" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewAmLichNamCanChi" android:layout_width="match_parent" android:layout_height="0dp" android:text="Ất Mùi" android:layout_weight="30"/>
+            </LinearLayout>
+        </vn.net.vac.base.view.View1242_311>
+        <include layout="@layout/layout_lichvannien_bottom_control2"/>
+    </RelativeLayout>
+</RelativeLayout>

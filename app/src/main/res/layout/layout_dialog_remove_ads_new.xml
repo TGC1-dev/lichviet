@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_rounded_conner_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+    <TextView android:textSize="@dimen/tuvi_dialog_title_text_size" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/dialogTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Xác nhận?"/>
+    <TextView android:textSize="@dimen/tuvi_dialog_text_size" android:textColor="@color/black" android:gravity="center" android:id="@+id/dialogExplain" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Bạn có muốn mua bản PRO để xóa bỏ quảng cáo và có đầy đủ toàn bộ các tính năng khác?"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="25dp">
+        <Button android:textColor="@color/black" android:id="@+id/dialogBtnPurchase" android:background="@drawable/bg_button_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" android:text="Mua bản PRO"/>
+        <Button android:textColor="@color/black" android:id="@+id/dialogBtnClose" android:background="@drawable/bg_button_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" android:text="Hủy"/>
+    </LinearLayout>
+</LinearLayout>

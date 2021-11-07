@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="@dimen/tuvi_row_epandalbe_list_view_height" android:baselineAligned="false" android:weightSum="100">
+    <TextView android:textSize="@dimen/activity_phong_thuy_row_text_size" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/text_row_title" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:text="test text test text test text test text test text" android:singleLine="true" android:layout_weight="90"/>
+    <ImageView android:layout_gravity="center_vertical" android:id="@+id/imgMuiten" android:layout_width="0dp" android:layout_height="20dp" android:src="@drawable/muiten" android:layout_weight="10" android:contentDescription="imgMuiten"/>
+</LinearLayout>

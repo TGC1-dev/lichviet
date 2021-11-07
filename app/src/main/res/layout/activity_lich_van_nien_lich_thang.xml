@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutLichVanNienDoiNgayActivity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:visibility="gone" android:src="@drawable/a_bg" android:scaleType="centerInside" android:contentDescription="@string/app_name" android:alpha="0.1" style="@style/Layout.FillWidthHeight"/>
+    <include layout="@layout/layout_header_lichvannien"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llMainLichNgay" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100" android:layout_above="@+id/llLichVanNienBottom" android:layout_below="@+id/layoutHeaderLichVanNien">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/thoitiet" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="10" android:layout_weight="5"/>
+        <RelativeLayout android:id="@+id/calendar" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="65">
+            <vn.net.vac.base.view.calendar.CalenderView android:id="@+id/calendar_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </RelativeLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="5">
+            <ImageView android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/img_dao"/>
+        </LinearLayout>
+        <LinearLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="10">
+            <TextView android:textSize="@dimen/activity_home_quote_text_size" android:gravity="center" android:layout_gravity="center" android:id="@+id/textGiohoangdao" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="GIỜ HOÀNG ĐẠO: Dần(3-5h), Thìn(7-9h), Tỵ(9-11h), Thân(15-17h), Dậu(17-19h), Hợi(21-23h)" android:layout_centerVertical="true"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/rlAmLich" android:padding="10dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="15">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/a_home_detail" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="100.9">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="92" android:layout_weight="25">
+                    <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:text="GIỜ" android:layout_weight="30"/>
+                    <TextView android:textColor="@color/main_red" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewAmLichGioNumber" android:layout_width="match_parent" android:layout_height="0dp" android:text="12:12" android:layout_weight="30"/>
+                    <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewAmLichGioCanChi" android:layout_width="match_parent" android:layout_height="0dp" android:text="TÂN HỢI" android:layout_weight="30"/>
+                </LinearLayout>
+                <View android:background="@color/white" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.3"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="92" android:layout_weight="25">
+                    <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:text="NGÀY" android:layout_weight="30"/>
+                    <TextView android:textColor="@color/main_red" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewAmLichNgayNumber" android:layout_width="match_parent" android:layout_height="0dp" android:text="21" android:layout_weight="30"/>
+                    <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewAmLichNgayCanChi" android:layout_width="match_parent" android:layout_height="0dp" android:text="MẬU TÝ" android:layout_weight="30"/>
+                </LinearLayout>
+                <View android:background="@color/white" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.3"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="92" android:layout_weight="25">
+                    <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:text="THÁNG" android:layout_weight="30"/>
+                    <TextView android:textColor="@color/main_red" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewAmLichThangNumber" android:layout_width="match_parent" android:layout_height="0dp" android:text="12" android:layout_weight="30"/>
+                    <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewAmLichThangCanChi" android:layout_width="match_parent" android:layout_height="0dp" android:text="KỶ SỬU" android:layout_weight="30"/>
+                </LinearLayout>
+                <View android:background="@color/white" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.3"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="92" android:layout_weight="25">
+                    <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:layout_width="match_parent" android:layout_height="0dp" android:text="NĂM" android:layout_weight="30"/>
+                    <TextView android:textColor="@color/main_red" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewAmLichNamNumber" android:layout_width="match_parent" android:layout_height="0dp" android:text="2015" android:layout_weight="30"/>
+                    <TextView android:textColor="@color/white" android:gravity="center" android:layout_gravity="center" android:id="@+id/textViewAmLichNamCanChi" android:layout_width="match_parent" android:layout_height="0dp" android:text="ẤT MÙI" android:layout_weight="30"/>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@+id/imageDetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/nav_detail" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/layout_lichvannien_bottom_control"/>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutTuVi12ConGiap" style="@style/Layout.FillWidthHeight.Vertical">
+    <com.etiennelawlor.quickreturn.library.views.NotifyingScrollView android:id="@+id/scrollViewMain" android:background="@drawable/bg_bottom" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/layad" android:layout_below="@+id/layoutHeaderLichVanNien">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.etiennelawlor.quickreturn.library.views.NotifyingWebView android:id="@+id/webView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <fragment android:name="vn.net.vac.base.view.fragment.FacebookNativeAdFragment" android:id="@+id/fragment_ads" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.etiennelawlor.quickreturn.library.views.NotifyingScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/selectConGiap" android:background="@drawable/bg_rounded_conner" android:paddingLeft="20dp" android:paddingTop="10dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="@dimen/acivity_tu_vi_12_con_giap_select_size" android:weightSum="100" android:layout_below="@+id/layoutHeaderLichVanNien">
+        <TextView android:textSize="@dimen/tu_vi_spinner_text_size" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/lblChonTuoi" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginBottom="2dp" android:text="Chọn tuổi:" android:layout_weight="30"/>
+        <Spinner android:textSize="20sp" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/spinner" android:background="@drawable/spinner_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="70"/>
+    </LinearLayout>
+    <include layout="@layout/layout_header_lichvannien2"/>
+    <include layout="@layout/layout_bottom_ad"/>
+</RelativeLayout>

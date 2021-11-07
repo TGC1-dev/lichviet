@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutHeaderLichVanNien" android:layout_height="@dimen/tuvi_top_size" style="@style/Layout.FillWidth.Vertical">
+    <LinearLayout android:background="@drawable/detail_top" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100">
+        <ImageView android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/imageLeft" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/btn_back_2" android:layout_weight="15" android:contentDescription="Back"/>
+        <TextView android:textSize="@dimen/activity_phong_thuy_row_title_text_size" android:textColor="#323a45" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@+id/lblTitle" android:layout_width="0dp" android:layout_height="match_parent" android:text="LỊCH NGÀY" android:lines="1" android:layout_weight="70"/>
+        <ImageView android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/imageRight" android:padding="10dp" android:paddingRight="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/_star_0" android:layout_weight="15"/>
+    </LinearLayout>
+    <View style="@style/Divider"/>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutLichVanNienThongTinUngDungActivity" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/Layout.FillWidthHeight.Vertical">
+    <ImageView android:src="@drawable/a_bg" android:scaleType="centerInside" android:contentDescription="@string/app_name" android:alpha="0.1" style="@style/Layout.FillWidthHeight"/>
+    <include layout="@layout/layout_header_lichvannien"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/llAppInfor" android:padding="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="100" android:layout_below="@+id/layoutHeaderLichVanNien">
+        <vn.net.vac.base.view.SquareImageView android:background="@drawable/icon" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="30"/>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="10dp" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="100" android:layout_weight="70">
+            <TextView android:textStyle="bold" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/txtAppname" android:layout_width="match_parent" android:layout_height="0dp" android:text="Lịch Vạn Niên 2016" android:layout_weight="25"/>
+            <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/txtVersion" android:layout_width="match_parent" android:layout_height="0dp" android:text="Phiên bản: 1.0" android:layout_weight="25"/>
+            <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/txtDev" android:layout_width="match_parent" android:layout_height="0dp" android:text="Nhà phát triển: VAC Co." android:layout_weight="25"/>
+            <TextView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/txtWebsite" android:layout_width="match_parent" android:layout_height="0dp" android:text="Website: vac.net.vn" android:layout_weight="25"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="@drawable/bg_chi_tiet_ngay" android:padding="10dp" android:layout_width="match_parent" android:layout_height="150dp" android:layout_margin="5dp" android:layout_below="@+id/llAppInfor">
+        <android.lib.widget.verticalmarqueetextview.VerticalMarqueeTextView android:id="@+id/txtContent" android:layout_width="match_parent" android:layout_height="wrap_content" lib:marqueeSpeed="30" lib:text="Ứng dụng Lịch Vạn Niên 2016 cung cấp cho người dùng thông tin về lịch ngày, lịch tháng, đổi ngày âm - dương, xem ngày tốt, xem nhịp sinh học, xem tử vi 12 con giáp, xem tử vi trọn đời... Một số đặc điểm nổi bật trong ứng dụng:\10- Xem Lịch Âm Dương\10- Xem can chi của ngày tháng\10- Xem giờ Hoàng Đạo - Hắc Đạo\10Mọi ý kiến đóng góp vui lòng gửi về hòm thư: vac.net.vn@gmail.com\10Trân trọng!\10VAC Co."/>
+    </LinearLayout>
+    <TextView android:textColor="#fc021a" android:gravity="center" android:id="@+id/txtWidget" android:paddingLeft="3dp" android:paddingRight="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="3dp" android:text="Chú ý cách tạo Widget: Nhấn và giữ trên Home screen ⇒ chọn Widgets ⇒ chọn “Lịch Vạn Niên” ⇒ OK" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

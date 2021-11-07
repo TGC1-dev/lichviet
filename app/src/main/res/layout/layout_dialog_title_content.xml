@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_rounded_conner_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+    <TextView android:textSize="@dimen/tuvi_dialog_title_text_size" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:id="@+id/dialogTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Title"/>
+    <TextView android:textSize="@dimen/tuvi_dialog_text_size" android:textColor="#000000" android:gravity="center" android:id="@+id/dialogContent" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="This is content!"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="25dp">
+        <Button android:textColor="#005be1" android:id="@+id/dialogBtnClose" android:background="@drawable/bg_button_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" android:text="Đóng lại"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:orientation="horizontal" android:id="@+id/nsh_detail" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false" android:weightSum="80">
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="90" android:layout_weight="30">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="100" android:layout_weight="30">
+            <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/nsh_suc_khoe" android:singleLine="true" android:layout_weight="50"/>
+            <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:gravity="center_vertical" android:id="@+id/textSuckhoe" android:layout_width="0dp" android:layout_height="match_parent" android:text="63%" android:singleLine="true" android:layout_weight="50"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="100" android:layout_weight="30">
+            <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/nsh_tinh_cam" android:singleLine="true" android:layout_weight="50"/>
+            <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:gravity="center_vertical" android:id="@+id/textTinhcam" android:layout_width="0dp" android:layout_height="match_parent" android:text="61%" android:singleLine="true" android:layout_weight="50"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="100" android:layout_weight="30">
+            <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/nsh_tri_tue" android:singleLine="true" android:layout_weight="50"/>
+            <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:gravity="center_vertical" android:id="@+id/textTritue" android:layout_width="0dp" android:layout_height="match_parent" android:text="59%" android:singleLine="true" android:layout_weight="50"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="90" android:layout_weight="30">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="100" android:layout_weight="30">
+            <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/nsh_tinh_than" android:singleLine="true" android:layout_weight="50"/>
+            <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:gravity="center_vertical" android:id="@+id/textTinhthan" android:layout_width="0dp" android:layout_height="match_parent" android:text="56%" android:singleLine="true" android:layout_weight="50"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="100" android:layout_weight="30">
+            <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/nsh_tham_my" android:singleLine="true" android:layout_weight="50"/>
+            <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:gravity="center_vertical" android:id="@+id/textThammy" android:layout_width="0dp" android:layout_height="match_parent" android:text="57%" android:singleLine="true" android:layout_weight="50"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="0dp" android:weightSum="100" android:layout_weight="30">
+            <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:gravity="center_vertical" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/nsh_truc_giac" android:singleLine="true" android:layout_weight="50"/>
+            <TextView android:textSize="@dimen/acivity_nsh_show_infor_text_size" android:gravity="center_vertical" android:id="@+id/textTrucgiac" android:layout_width="0dp" android:layout_height="match_parent" android:text="58%" android:singleLine="true" android:layout_weight="50"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="100" android:layout_weight="20">
+        <TextView android:textSize="@dimen/acivity_nsh_show_trung_binh_text_size" android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="0dp" android:text="TRUNG BÌNH" android:singleLine="true" android:layout_weight="50"/>
+        <TextView android:textSize="@dimen/acivity_nsh_show_trung_binh_text_size" android:textColor="#e40022" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/textTrungbinh" android:layout_width="match_parent" android:layout_height="0dp" android:text="59%" android:singleLine="true" android:layout_weight="50"/>
+    </LinearLayout>
+</LinearLayout>

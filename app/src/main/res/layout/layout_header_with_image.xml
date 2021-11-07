@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutHeaderWithImage" android:background="@android:color/white" android:layout_height="@dimen/tuvi_top_size" style="@style/Layout.FillWidth.Vertical">
+    <LinearLayout android:background="@drawable/top_bar" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100">
+        <ImageView android:layout_gravity="center" android:id="@+id/imageLeft" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/btn_back" android:scaleType="fitStart" android:layout_weight="15" android:contentDescription="Back"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/imageTitle" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/pt_tieude" android:scaleType="centerInside" android:layout_weight="70" android:contentDescription="image title"/>
+        <ImageView android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/btnRight" android:padding="8dp" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/facebook_share" android:layout_weight="15" android:contentDescription="Home"/>
+    </LinearLayout>
+    <View style="@style/Divider"/>
+</LinearLayout>

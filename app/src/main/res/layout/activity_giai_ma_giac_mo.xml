@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutGiaiMaGiacMo" style="@style/Layout.FillWidthHeight.Vertical">
+    <include layout="@layout/layout_header_lichvannien2"/>
+    <com.etiennelawlor.quickreturn.library.views.NotifyingWebView android:id="@+id/webView" android:background="@drawable/bg_bottom" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/layoutHeaderLichVanNien"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llListView" android:background="@drawable/bg_bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_above="@+id/layad" android:layout_below="@+id/layoutHeaderLichVanNien">
+        <vn.net.vac.base.view.ClearableEditText android:id="@+id/inputSearch" android:layout_width="match_parent" android:layout_height="@dimen/tuvi_bottom_size" android:hint="Tìm kiếm" android:singleLine="true"/>
+        <ListView android:layout_gravity="bottom" android:id="@+id/listView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/llIndexListView" android:background="@drawable/bg_bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="3dp" android:layout_above="@+id/layad" android:layout_below="@+id/layoutHeaderLichVanNien">
+        <vn.net.vac.base.view.ClearableEditText android:id="@+id/inputSearchIndexList" android:layout_width="match_parent" android:layout_height="@dimen/tuvi_bottom_size" android:hint="Tìm kiếm" android:singleLine="true"/>
+        <vn.net.vac.base.view.alphabet_list.widget.IndexableListView android:layout_gravity="bottom" android:id="@+id/indexListView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/listViewBottom" android:background="@drawable/bottom_bar" android:padding="3dp" android:layout_width="match_parent" android:layout_height="@dimen/tuvi_bottom_size" android:layout_above="@+id/layad">
+        <LinearLayout android:layout_gravity="center" android:id="@+id/listViewBottomBtn" android:background="@drawable/gm1_tab1" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="75">
+            <vn.net.vac.base.view.AutoBgButton android:id="@+id/btnPt1Tab1" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="25" style="@style/Button"/>
+            <vn.net.vac.base.view.AutoBgButton android:id="@+id/btnPt1Tab2" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="25" style="@style/Button"/>
+            <vn.net.vac.base.view.AutoBgButton android:id="@+id/btnPt1Tab3" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="25" style="@style/Button"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_ad"/>
+</RelativeLayout>

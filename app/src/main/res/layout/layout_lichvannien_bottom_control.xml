@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/llLichVanNienBottom" android:background="#fc021a" android:layout_width="match_parent" android:layout_height="@dimen/tuvi_top_size" android:layout_alignParentBottom="true">
+    <LinearLayout android:layout_gravity="center" android:id="@+id/llLichVanNienButtonBottom" android:background="@drawable/a_tieude" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100">
+        <ImageView android:id="@+id/btnLichNgay" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/a_ngay" android:layout_weight="25" android:alpha="0.5"/>
+        <ImageView android:id="@+id/btnLichThang" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/a_thang" android:layout_weight="25" android:alpha="0.5"/>
+        <ImageView android:id="@+id/btnDoiNgay" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/a_doingay" android:layout_weight="25" android:alpha="0.5"/>
+        <ImageView android:id="@+id/btnMoRong" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/a_morong" android:layout_weight="25" android:alpha="0.5"/>
+    </LinearLayout>
+</LinearLayout>

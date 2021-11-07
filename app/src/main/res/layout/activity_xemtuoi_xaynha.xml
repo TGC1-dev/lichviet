@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutXuatHanh" style="@style/Layout.FillWidthHeight.Vertical">
+    <include layout="@layout/layout_header_lichvannien2"/>
+    <ScrollView android:id="@+id/scrollViewMain" android:background="@drawable/bg_bottom" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/layad" android:layout_below="@+id/layoutHeaderLichVanNien">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:weightSum="40" android:layout_weight="30">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="@dimen/acivity_tu_vi_12_con_giap_select_size" android:weightSum="100">
+                <TextView android:textSize="@dimen/tu_vi_spinner_text_size" android:ellipsize="start" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/lblChonTuoi" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_marginBottom="2dp" android:text="Năm sinh âm lịch:" android:singleLine="true" android:layout_weight="40"/>
+                <Spinner android:textSize="@dimen/tu_vi_spinner_text_size" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/spinnerNamsinhAmlich" android:background="@drawable/spinner_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="60"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingTop="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="@dimen/acivity_tu_vi_12_con_giap_select_size" android:weightSum="100">
+                <TextView android:textSize="@dimen/tu_vi_spinner_text_size" android:ellipsize="start" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/lblChonCanChi" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_marginBottom="2dp" android:text="Năm muốn xây nhà:" android:singleLine="true" android:layout_weight="40"/>
+                <Spinner android:textSize="@dimen/tu_vi_spinner_text_size" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/spinnerNamXaynha" android:background="@drawable/spinner_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="60"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/btnShowResult" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="8dp" android:src="@drawable/btn_xem_ket_qua"/>
+        </LinearLayout>
+    </ScrollView>
+    <include layout="@layout/layout_bottom_ad"/>
+</RelativeLayout>

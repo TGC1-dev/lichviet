@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:background="@xml/bg_nsh" style="@style/Layout.FillWidthHeight.Vertical">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+        <androidx.viewpager.widget.ViewPager android:id="@+id/pager" style="@style/Layout.Weight.HeightFillWidth"/>
+        <vn.net.vac.base.view.viewpagerindicator.CirclePageIndicator android:id="@+id/indicator" android:padding="10dp" lib:fillColor="#ff1565" lib:pageColor="#8e8f93" lib:radius="4dp" style="@style/Layout.FillWidth"/>
+        <Button android:textSize="@dimen/giaithich_quangcaoTextsize" android:textColor="@android:color/white" android:id="@+id/btnAgree" android:background="@drawable/bg_button_facebook_native_ad" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/height_button" android:layout_margin="20dp" android:layout_marginTop="0dp" android:text="Tôi đã hiểu"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/btnClose" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:src="@drawable/mobile510ads_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="Close Dialog"/>
+</RelativeLayout>

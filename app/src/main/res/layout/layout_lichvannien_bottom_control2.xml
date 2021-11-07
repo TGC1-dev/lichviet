@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/llLichVanNienBottom" android:background="@drawable/bottom_bg" android:layout_width="match_parent" android:layout_height="55dp" android:layout_alignParentBottom="true">
+    <LinearLayout android:layout_gravity="center" android:id="@+id/llLichVanNienButtonBottom" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100">
+        <ImageView android:id="@+id/btnLichNgay" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/tab1" android:layout_weight="25" android:alpha="0.5"/>
+        <ImageView android:id="@+id/btnLichThang" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/tab2" android:layout_weight="25" android:alpha="0.5"/>
+        <ImageView android:id="@+id/btnDoiNgay" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/tab3" android:layout_weight="25" android:alpha="0.5"/>
+        <ImageView android:id="@+id/btnXemSao" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/tab4" android:layout_weight="25" android:alpha="0.5"/>
+        <ImageView android:id="@+id/btnMoRong" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/tab5" android:layout_weight="25" android:alpha="0.5"/>
+    </LinearLayout>
+</LinearLayout>

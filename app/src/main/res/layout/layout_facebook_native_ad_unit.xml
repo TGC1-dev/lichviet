@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/adUnit" android:background="@android:color/transparent" android:paddingTop="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="#737373" android:layout_width="match_parent" android:layout_height="2px"/>
+        <TextView android:textSize="@dimen/facebook_native_ad_cothebanquantam" android:gravity="left" android:layout_gravity="center" android:id="@+id/txtCotheBanQuantam" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="CÓ THỂ BẠN QUAN TÂM"/>
+        <LinearLayout android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/nativeAdIcon" android:layout_width="@dimen/giaithich_quangcaoIconSize" android:layout_height="@dimen/giaithich_quangcaoIconSize" android:contentDescription="AdIcon"/>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="@dimen/giaithich_quangcaoIconSize" android:weightSum="4">
+                <TextView android:textSize="@dimen/facebook_native_ad_nativeAdTitle" android:textStyle="bold" android:textColor="@android:color/black" android:ellipsize="end" android:id="@+id/nativeAdTitle" android:layout_width="wrap_content" android:layout_height="0dp" android:lines="1" android:layout_weight="2"/>
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/AdChoicesView" android:layout_width="wrap_content" android:layout_height="0dp" android:layout_weight="2">
+                    <TextView android:textSize="@dimen/facebook_native_ad_sponsored" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/txtAdChoices" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:text="Sponsored"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <com.facebook.ads.MediaView android:gravity="center" android:id="@+id/nativeAdMedia" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:orientation="horizontal" android:background="#eee9c3" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:weightSum="10">
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="6">
+                <TextView android:textSize="@dimen/facebook_native_ad_nativeAdSocialContext" android:textColor="@android:color/black" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/nativeAdSocialContext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="3"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="3dp" android:layout_weight="4">
+                <Button android:textSize="@dimen/facebook_native_ad_nativeAdCallToAction" android:textColor="@android:color/white" android:id="@+id/nativeAdCallToAction" android:background="@drawable/bg_button_facebook_native_ad" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#eee9c3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+        <TextView android:textSize="@dimen/facebook_native_ad_txtWhyShowAds" android:gravity="center" android:layout_gravity="center" android:id="@+id/txtWhyShowAds" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="TẠI SAO CÓ QUẢNG CÁO?"/>
+    </LinearLayout>
+</LinearLayout>

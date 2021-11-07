@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent" android:layout_height="@dimen/tuvi_row_list_view_height">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false" android:weightSum="100">
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="match_parent" android:weightSum="2" android:layout_weight="90">
+            <TextView android:textSize="@dimen/activity_phong_thuy_row_text_size" android:textColor="#a70003" android:ellipsize="end" android:gravity="bottom" android:id="@+id/text_row_name" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="8dp" android:text="test text test text test text test text test text" android:lines="1" android:layout_weight="1"/>
+            <TextView android:textSize="@dimen/activity_phong_thuy_row_text_size" android:ellipsize="end" android:gravity="top" android:id="@+id/text_row_description" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="8dp" android:text="test text test text test text test text test text" android:lines="1" android:layout_weight="1"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/imgMuiten" android:layout_width="0dp" android:layout_height="20dp" android:src="@drawable/muiten" android:layout_weight="10" android:contentDescription="imgMuiten"/>
+    </LinearLayout>
+    <View android:id="@+id/divider" android:background="#f0f0f0" android:layout_width="match_parent" android:layout_height="2px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

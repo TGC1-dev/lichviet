@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutLichVanNienChiTietNgayActivity" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/layout_header_lichvannien2"/>
+    <RelativeLayout android:background="@drawable/bg_bottom" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/layoutHeaderLichVanNien">
+        <ScrollView android:id="@+id/scrollViewMain" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/layad">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <WebView android:id="@+id/webView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <fragment android:name="vn.net.vac.base.view.fragment.FacebookNativeAdFragment" android:id="@+id/fragment_ads" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </ScrollView>
+        <include layout="@layout/layout_bottom_ad"/>
+    </RelativeLayout>
+</RelativeLayout>

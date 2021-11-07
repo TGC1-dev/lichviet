@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutHeaderWithText" android:background="@android:color/white" android:layout_height="@dimen/tuvi_top_size" style="@style/Layout.FillWidth.Vertical">
+    <LinearLayout android:background="@drawable/top_bar" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100">
+        <ImageView android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/imageLeft" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/btn_back" android:layout_weight="15" android:contentDescription="Back"/>
+        <TextView android:textSize="@dimen/activity_phong_thuy_detail_header_title_text_size" android:textColor="#f4d14a" android:ellipsize="end" android:gravity="center" android:layout_gravity="top|center_vertical|center_horizontal|center" android:id="@+id/lblTitle" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginBottom="3dp" android:text="The long header của title!!!!!" android:lines="1" android:singleLine="false" android:layout_weight="70"/>
+        <ImageView android:gravity="center_vertical" android:layout_gravity="center" android:id="@+id/imageHome" android:visibility="gone" android:layout_width="0dp" android:layout_height="match_parent" android:src="@drawable/btn_home" android:layout_weight="15" android:contentDescription="Home"/>
+    </LinearLayout>
+    <View style="@style/Divider"/>
+</LinearLayout>

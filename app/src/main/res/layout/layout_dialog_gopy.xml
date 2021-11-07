@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_rounded_conner_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+    <TextView android:textSize="@dimen/tuvi_dialog_title_text_size" android:textStyle="bold" android:textColor="#000000" android:gravity="center" android:id="@+id/dialogLoingoTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Góp ý ứng dụng"/>
+    <TextView android:textSize="@dimen/tuvi_dialog_text_size" android:textColor="#000000" android:gravity="center" android:id="@+id/dialogTxt" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Mobile510 rất mong nhận được những ý kiến đóng góp chân thành của quí vị để ứng dụng ngày một hoàn thiện hơn. Mọi thông tin phản hồi, ý kiến góp ý về ứng dụng xin gửi về hòm thư mobile510.contact@gmail.com. Xin cảm ơn!"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="25dp" android:weightSum="100">
+        <Button android:textColor="#005be1" android:id="@+id/dialogBtnRating" android:background="@drawable/bg_button_white" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="10dp" android:text="Góp ý" android:layout_weight="50"/>
+        <Button android:textColor="#005be1" android:id="@+id/dialogBtnDonotRating" android:background="@drawable/bg_button_white" android:layout_width="0dp" android:layout_height="match_parent" android:layout_margin="10dp" android:text="Hủy" android:layout_weight="50"/>
+    </LinearLayout>
+</LinearLayout>

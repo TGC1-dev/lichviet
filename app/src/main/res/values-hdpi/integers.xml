@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="tuvi_webview_text_zoom">100</integer>
+</resources>

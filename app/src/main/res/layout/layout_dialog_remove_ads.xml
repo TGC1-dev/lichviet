@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/bg_rounded_conner_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp">
+    <TextView android:textSize="@dimen/tuvi_dialog_title_text_size" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@+id/dialogTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Xóa Quảng Cáo"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="25dp">
+        <Button android:textColor="@color/black" android:id="@+id/dialogBtnPurchase" android:background="@drawable/bg_button_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" android:text="Mua phiên bản PRO"/>
+        <Button android:textColor="@color/black" android:id="@+id/dialogBtnRestorePurchase" android:background="@drawable/bg_button_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" android:text="Khôi phục bản đã mua"/>
+        <Button android:textColor="@color/black" android:id="@+id/dialogBtnClose" android:background="@drawable/bg_button_white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="10dp" android:text="Hủy"/>
+    </LinearLayout>
+</LinearLayout>

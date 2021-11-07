@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:lib="http://schemas.android.com/apk/res-auto" android:id="@+id/layoutTuVi12ChomSaoDetail" style="@style/Layout.FillWidthHeight.Vertical">
+    <include layout="@layout/layout_header_lichvannien2"/>
+    <com.etiennelawlor.quickreturn.library.views.NotifyingScrollView android:id="@+id/scrollViewMain" android:background="@drawable/bg_bottom" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/layad" android:layout_below="@+id/layoutHeaderLichVanNien">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.etiennelawlor.quickreturn.library.views.NotifyingWebView android:id="@+id/webView" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <fragment android:name="vn.net.vac.base.view.fragment.FacebookNativeAdFragment" android:id="@+id/fragment_ads" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </com.etiennelawlor.quickreturn.library.views.NotifyingScrollView>
+    <LinearLayout android:orientation="vertical" android:id="@+id/listViewBottom" android:background="@drawable/bottom_bar" android:padding="3dp" android:layout_width="match_parent" android:layout_height="@dimen/tuvi_bottom_size" android:layout_above="@+id/layad">
+        <LinearLayout android:layout_gravity="center" android:id="@+id/listViewBottomBtn" android:background="@drawable/sao_tab1" android:layout_width="match_parent" android:layout_height="match_parent" android:weightSum="100">
+            <vn.net.vac.base.view.AutoBgButton android:id="@+id/btnPt1Tab1" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="25" style="@style/Button"/>
+            <vn.net.vac.base.view.AutoBgButton android:id="@+id/btnPt1Tab2" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="25" style="@style/Button"/>
+            <vn.net.vac.base.view.AutoBgButton android:id="@+id/btnPt1Tab3" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="25" style="@style/Button"/>
+            <vn.net.vac.base.view.AutoBgButton android:id="@+id/btnPt1Tab4" android:background="@android:color/transparent" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="25" style="@style/Button"/>
+        </LinearLayout>
+    </LinearLayout>
+    <include layout="@layout/layout_bottom_ad"/>
+</RelativeLayout>
